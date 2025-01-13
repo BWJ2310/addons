@@ -19,6 +19,7 @@ export class AISettingsHandler extends Handler {
     @param('url', Types.String)
     @param('model', Types.String)
     async post( domainId: string, useAI: Boolean, count: number, key: string, url: string, model: string ) {
+        this.checkPerm(PERM.PERM_EDIT_DOMAIN);
         // Validate inputs
         if (useAI==null) {
             useAI = false;
