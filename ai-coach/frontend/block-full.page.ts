@@ -1,2 +1,2 @@
-var row = document.getElementsByClassName('row')[0];
-row.style = "max-width: 100%;"
+var row = document.getElementsByClassName('row')[2];
+row.style = "min-width: 90vw;"
